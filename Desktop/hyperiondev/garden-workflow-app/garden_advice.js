@@ -1,16 +1,31 @@
+function summerAdvice() {
+  return "Water your plants regularly.";
+}
+
+function winterAdvice() {
+  return "Protect plants from frost.";
+}
+
+function springAdvice() {
+  return "Plant new flowers and vegetables.";
+}
+
+function autumnAdvice() {
+  return "Rake leaves and prepare soil.";
+}
+
 function getAdvice(season) {
   if (season === "summer") {
-    return "Water your plants regularly.";
+    return summerAdvice();
   } else if (season === "winter") {
-    return "Protect plants from frost.";
+    return winterAdvice();
   } else if (season === "spring") {
-    return "Plant new flowers and vegetables.";
+    return springAdvice();
   } else if (season === "autumn") {
-    return "Rake leaves and prepare soil.";
+    return autumnAdvice();
   } else {
     return "Invalid season.";
   }
 }
 
-// Example usage
 console.log(getAdvice("summer"));
